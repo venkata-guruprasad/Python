@@ -1,0 +1,89 @@
+# Check Last Digit
+n = 2131
+print(n%10)
+
+output:
+1
+
+# Accept an integer from the user.Find its last digit.
+num = int(input('Enter a number : '))
+print(num%10)
+
+output:
+
+Enter a number : 123456
+6
+
+# Print "Even Last Digit" if the last digit is even; otherwise print "Odd Last Digit".
+num = int(input('Enter a number : '))
+s = num%10
+if s%2 == 0:
+    print('Even last digit',s)
+else:
+    print('Odd last digit',s)
+
+output:
+Enter a number : 2131
+Odd last digit 1
+
+# Accept an integer from the user.Extract the last digit.
+n = 210504
+print(n%10)
+
+output:
+4
+
+# If the last digit is divisible by 3, print "Last digit is divisible by 3"; otherwise print "Last digit is not divisible by 3".
+n = int(input('Enter a number : '))
+v = n%10
+if v%3 == 0:
+    print('Last digit is divisible by 3')
+else:
+    print('Last digit is not divisible by 3')
+
+output:
+Enter a number : 523146
+Last digit is divisible by 3
+
+# Accept a single character from the user.If it is an alphabet, print "Alphabet".Otherwise, print "Not an Alphabet".
+s = str(input('Enter a single character : '))
+if 'a'<= s <= 'z' or 'A'<= s <= 'Z':
+    print('It is an Alphabet')
+else:
+    print('Not an Alphabet')
+
+output:
+
+Enter a single character : s
+It is an Alphabet
+
+
+# Accept a single alphabet from the user.If it is an uppercase letter, print "Uppercase".Otherwise, print "Lowercase".
+v = input('Enter a single character : ')
+if 'a' <= v <= 'z':
+    print('Lowercase')
+elif 'A' <= v <= 'Z':
+    print('Uppercase')
+else:
+    print('Not an Alphabet')
+
+output:
+
+Enter a single character : g
+Lowercase
+
+
+# Accept a single alphabet from the user.If it is a vowel (A, E, I, O, U or a, e, i, o, u), print "Vowel".Otherwise, print "Consonant".
+v = input('Enter a single character : ')
+if v in ('A','E','I','O','U','a','e','i','o','u'):
+    print('Vowel')
+else:
+    print('Consonant')
+
+output:
+
+Enter a single character : g
+Consonant
+
+Enter a single character : I
+Vowel

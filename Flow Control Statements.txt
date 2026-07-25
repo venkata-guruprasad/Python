@@ -1,0 +1,93 @@
+# Write a program to check if a user has entered the correct OTP (1234). If correct, display "OTP Verified".
+
+otp = int(input('Enter OTP : '))
+if otp == 1234:
+    print('OTP verified')
+
+output:
+
+Enter OTP : 1234
+OTP verified
+
+
+# Write a program to check if the mobile battery percentage is below 20. If yes, display "Please Charge Your Phone".
+
+mobile_battery = int(input('Enter your battery percentage : '))
+if mobile_battery < 20:
+    print('Please Charge Your Phone')
+
+output:
+
+Enter your battery percentage : 15
+Please Charge Your Phone
+
+
+# Write a program to check if a bank account balance is greater than ₹10,000. If yes, display "Eligible for Premium Account".
+
+balance = int(input('Enter your bank balance : '))
+if balance > 10000:
+    print('Eligible for Premium Account')
+else:
+    print('Not Eligible for Premium Account')
+
+output:
+
+Enter your bank balance : 15000
+Eligible for Premium Account
+
+
+# Write a program to check if a person has a valid ticket (has_ticket = True). If yes, display "Welcome to the Movie".
+
+has_ticket = True
+if has_ticket:
+    print("Welcome to the Movie")
+else:
+    print("Please buy a valid ticket.")
+
+output:
+
+Welcome to the Movie
+
+
+# Write a program to check whether a person is eligible to vote.
+
+Age  = int(input('Enter Your Age : '))
+if Age >= 18:
+    print('Eligible for vote')
+else:
+    print('Not Eligible for vote')
+
+output:
+
+Enter Your Age : 19
+Eligible for vote
+
+
+# Write a program to check whether a customer is eligible for free delivery (bill ≥ ₹1000).
+
+bill  = int(input('Enter bill amount : '))
+if bill >= 1000:
+    print('Eligible for free delivery')
+else:
+    print('Not Eligible for free delivery')
+
+output:
+
+Enter bill amount : 1500
+Eligible for free delivery
+
+# Write a program to check whether a user has enough balance to withdraw ₹5000.
+
+balance = int(input('Enter your Balance : '))
+if balance >= 5000:
+    print('Withdraw')
+else:
+    print('Insufficient Balance')
+
+output:
+
+Enter your Balance : 5000
+Withdraw
+
+Enter your Balance : 300
+Insufficient Balance
