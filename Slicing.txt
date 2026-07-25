@@ -1,0 +1,22 @@
+l = [
+      {"a":["hockey","volley ball","foot ball"],
+       "b": ("pushpa","dragon","Varanasi","aarya")},
+      True,
+      "67890",
+      "5678.897",
+      [78,False]
+    ]
+
+print(l[3][3:6])
+
+print(l[3][-1:-3:-1])
+
+print(l[0]['b'][::3])
+
+print(l[0]['b'][2][4:])
+
+print(l[4])
+
+print(l[0]['a'][1][4::2])
+
+print(l[0]['a'][0][3:])
