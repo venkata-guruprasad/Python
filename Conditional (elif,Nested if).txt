@@ -1,0 +1,172 @@
+# Check whether a number is positive, negative, or zero
+
+num = int(input('Enter a Number : '))
+if num > 0:
+    print(num,'is Positive')
+elif num < 0:
+    print(num,'is Negative')
+else:
+    print('Number is',num)
+
+output:
+Enter a Number : 21
+21 is Positive
+Enter a Number : 0
+Number is 0
+
+# Assign grades based on marks:
+# 90–100 → A
+# 75–89 → B
+# 60–74 → C
+# 40–59 → D
+# Below 40 → Fail
+
+marks = int(input('Enter Your Marks : '))
+if marks >= 90 and marks <= 100:
+    print('GRADE A')
+elif marks >= 75 and marks <= 89:
+    print('GRADE B')
+elif marks >= 60 and marks <= 74:
+    print('GRADE C')
+elif marks >= 40 and marks <= 59:
+    print('GRADE D')
+else:
+    print('Fail')
+
+output:
+Enter Your Marks : 90
+GRADE A
+Enter Your Marks : 30
+Fail
+
+# Check whether a person is a child, teenager, adult, or senior citizen based on age.
+age = int(input('Enter Your Age : '))
+if age >= 0 and age <= 12:
+    print('Child')
+elif age >= 13 and age <= 19:
+    print('Teenager')
+elif age >= 20 and age <= 59:
+    print('Adult')
+else:
+    print('Senior Citizen')
+
+output:
+
+Enter Your Age : 22
+Adult
+Enter Your Age : 61
+Senior Citizen
+
+
+# Check whether a number is a one-digit, two-digit, three-digit, or more than three-digit number.hint : (0<=number<=9) for one digit number
+
+digit = int(input('Enter a Digit : '))
+if digit >= 0 and digit <= 9: 
+    print('One Digit Number',digit)
+elif digit >= 10 and digit <= 99:
+    print('Two Digit Number',digit)
+elif digit >= 100 and digit <= 999:
+    print('Three Digit Number',digit)
+else:
+    print('More than Three-digit Number',digit)
+
+output:
+
+Enter a Digit : 10
+Two Digit Number 10
+Enter a Digit : 6548
+More than Three-digit Number 6548
+
+# Check whether a customer can withdraw money (correct PIN and sufficient balance).
+
+correct_pin = 2131
+entered_pin = int(input('Enter Pin : '))
+balance = 10000
+if entered_pin == correct_pin:
+    withdraw = int(input('Enter money to withdraw : '))
+    if withdraw <= balance:
+        print('Withdraw Successful')
+        balance -= withdraw
+        print('Remaining Balance ',balance)
+    else:
+        print('Insufficient Balance')
+else:
+    print('Incorrect Pin')
+
+output:
+
+Enter Pin : 2131
+Enter money to withdraw : 9000
+Withdraw Successful
+Remaining Balance  1000
+
+Enter Pin : 1234
+Incorrect Pin
+
+Enter Pin : 2131
+Enter money to withdraw : 11000
+Insufficient Balance
+
+# Check whether a scholarship is awarded (marks ≥ 85%, then family income below limit).
+
+marks = int(input('Enter marks Percentage : '))
+if marks >= 85:
+    Family_income  = int(input('Enter Your Family Income : '))
+    if Family_income < 120000:
+        print('Sholarship is Awarded')
+    else:
+        print('Family Income is More than 120000')
+else:
+    print('Not Eligible for Scholarship ')
+
+output:
+
+Enter marks Percentage : 75
+Not Eligible for Scholarship 
+
+Enter marks Percentage : 89
+Enter Your Family Income : 100000
+Sholarship is Awarded
+
+# Check whether an online order is confirmed (stock available, then payment successful).
+
+stock_available = input('if stock is available (YES/NO) : ')
+if stock_available == "YES":
+    payment  = input('Is Payment Successful(YES/NO) : ')
+    if payment  == 'YES':
+        print('Order Conformed')
+    else:
+        print('Payment Unsuccessful')
+else:
+    print('Out Of Stock')
+
+output:
+
+if stock is available (YES/NO) : YES
+Is Payment Successful(YES/NO) : NO
+Payment Unsuccessful
+
+if stock is available (YES/NO) : YES
+Is Payment Successful(YES/NO) : YES
+Order Conformed
+
+# Check whether an employee is eligible for a bonus (service ≥ 5 years and performance rating ≥ 4).
+
+service = int(input('Enter Employee Service : '))
+if service >= 5:
+    performance_rating = int(input('Enter His/Her Performance Rating : '))
+    if performance_rating >= 4:
+        print("Employee is eligible for a Bonus")
+    else:
+        print('Improve Performance')
+else:
+    print('Not eligible for bonus')
+
+output:
+
+Enter Employee Service : 4
+Not eligible for bonus
+
+Enter Employee Service : 6
+Enter His/Her Performance Rating : 4
+Employee is eligible for a Bonus
