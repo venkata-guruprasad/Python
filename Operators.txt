@@ -1,0 +1,153 @@
+# Arithmetic Operators
+a = 11
+b = 17
+print(a+b)
+print(a-b)
+print(a/b)
+print(a//b)
+print(a%b)
+print(a*b)
+
+output:
+28
+-6
+0.6470588235294118
+0
+11
+187
+
+# Assignment Operators
+a = 50
+a += 10
+print(a)
+a -= 10
+print(a)
+a = 91
+print(a)
+a /= 11
+print(a)
+a //= 2
+print(a)
+a %= 3
+print(a)
+a *= 21
+print(a)
+
+output:
+60
+50
+91
+8.272727272727273
+4.0
+1.0
+21.0
+
+# Comparison Operators
+a = 21
+b = 31
+print(a == b)
+print(a != b)
+print(a > b)
+print(a < b)
+print(a >= b)
+print(a <= b)
+
+output:
+False
+True
+False
+True
+False
+True
+
+# Logical Operators
+num = 59
+print(num > 10 and num < 100)
+print(num %2 == 0 or num %5 == 0)
+print(not(num > 50))
+
+output:
+True
+False
+False
+
+# Identity Operators
+s = [11,31,"Sura"]
+v = [11,31,"Sura"]
+print(s == v)
+print(s is v)
+print(s is not v)
+
+output:
+True
+False
+True
+
+# Membership Operators
+v = 'h'
+s = 'Python'
+print(v in s)
+print(v not in s)
+
+output:
+True
+False
+
+# Student Marks Calculator
+telugu = 89
+hindi = 85
+english = 94
+maths = 99
+science = 97
+
+total = telugu + english + hindi + maths + science
+
+average = total/5
+
+percentage = (total/500)*100
+
+print("Total : ",total)
+print("Average : ",average)
+print("Precentage : ",percentage)
+
+output:
+Total :  464
+Average :  92.8
+Precentage :  92.80000000000001
+
+# Shopping Bill Calculator
+p1 = 100
+q1 = 2
+
+p2 = 120
+q2 = 1
+
+p3 = 209
+q3 = 3
+
+t1 = p1*q1
+t2 = p2*q2
+t3 = p3*q3
+
+bill = t1+t2+t3
+
+print(bill)
+print(t1>t3)
+print(t1<t3)
+print(t1==t3)
+
+output:
+947
+False
+True
+False
+
+# Temperature Converter
+c  = 40
+f  = (c*(9/5))+32
+print(f)
+print(f>100)
+
+output:
+104.0
+True
