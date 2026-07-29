@@ -1,0 +1,77 @@
+# Write a Python program to print each digit of a number separately.
+n = int(input('Enter a number : '))
+while n>0:
+    d = n%10
+    print(d)
+    n//=10
+
+output:
+
+Enter a number : 1234
+4
+3
+2
+1
+
+# Write a Python program to find the sum of digits of a given number.
+n = int(input('Enter a number : '))
+sum = 0
+while n>0:
+    d = n%10
+    sum += d
+    n//=10
+print(sum)
+
+output:
+
+Enter a number : 1234
+10
+
+# Write a Python program to find the smallest digit in a number.
+n = int(input('Enter a number : '))
+small = 9
+while n>0:
+    d = n%10
+    if d <= small:
+        small = d
+    n//=10
+print(small)
+
+output:
+
+Enter a number : 546
+4
+
+# Write a program to check whether a number is an Armstrong number using a while loop.
+n = 371
+temp = n
+sum = 0
+ord = len(str(n))
+while n>0:
+    d = n%10
+    sum= sum+d**ord
+    n//=10
+print(sum)
+if temp == sum:
+    print('Armstrong Number',temp,sum)
+else:
+    print('Not an Armstrong number')
+
+output:
+
+371
+Armstrong Number 371 371
+
+# Write a Python program to reverse a given number.
+n = int(input('Enter a Number : '))
+rev = 0
+while n>0:
+    d = n%10
+    rev = rev*10+d
+    n//=10
+print('Reverse number is :',rev)
+
+output:
+
+Enter a Number : 2131
+1312
